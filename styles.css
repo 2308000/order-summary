@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    background-color: var(--pale-blue);
+    text-align: center;
+}
+
+/*------------------
+--------CARD--------
+------------------*/
+
+.card {
+    border-radius: 25px;
+    width: 90%;
+    max-width: 28rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+}
+
+.illustration {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin: 1.5rem 0;
+}
+
+.description {
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 550px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+
+.card p { 
+    color: var(--desaturated-blue);
+}
+
+.information {
+    background-color: var(--very-pale-blue);
+    display: block;
+    width: 86%;
+    margin: 0 auto 1em auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.information h4 {
+    padding: 1em 0;
+    text-align: left;
+    font-weight: 900;
+}
+
+.information h4 span { 
+    font-weight: 300;
+    display: block;
+    color: var(--desaturated-blue);
+}
+
+.information img {
+    margin: auto;
+    position: relative;
+    float: left;
+    margin: 1em;
+}
+
+.button {
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    width: 86%;
+    margin: auto;
+    padding: 0.9em 0;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 15px 10px var(--pale-blue);
+}
+
+.button:hover {
+    background-color: rgb(113, 118, 184);
+}
+
+@media (min-width: 390px) {
+    .description {
+        width: 70%;
+    }
+    .information {
+        width: 78%;
+    }
+    .button {
+        width: 78%;
+    }
+}
+
+.right {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    bottom: 28px;
+    color: rgb(113, 118, 184);
+}
+
+@media (max-width: 280px) {
+    .right {
+        bottom: 0px; 
+        right: 68px;
+    }
+}
+
+.right:hover {
+    text-decoration: none;
+}
+
+.cancel {
+    font-weight: 900;
+    cursor: pointer;
+    padding: 1.2em 0;
+    margin: 0;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

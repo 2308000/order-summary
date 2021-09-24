@@ -74,12 +74,13 @@ body {
     margin: 0 auto 1em auto;
     border-radius: 5px;
     position: relative;
+    color: var(--dark-blue);
 }
 
 .information h4 {
     padding: 1em 0;
     text-align: left;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .information h4 span { 
